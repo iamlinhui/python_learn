@@ -1,4 +1,7 @@
+import keyword
+
 # Python中使用变量，不需要声明，直接为变量赋值即可
+
 a = 10
 
 # 不能使用没有进行过赋值的变量
@@ -31,3 +34,14 @@ print(a)
 #   练习：尝试自己定义几个变量（复杂一些，尝试不同的命名法），然后打印一些变量
 #           通过搜索引擎搜索还有哪些其他的命名规范
 _b123 = 20
+
+# python保留字
+
+'''
+ 预留关键字
+'False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await',
+'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except',
+'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda',
+'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield'
+'''
+print(keyword.kwlist)
