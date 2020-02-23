@@ -3,14 +3,16 @@ import time
 
 from DailyPractice import DailyPractice
 
+import PropertiesUtils
+
 print("Hello world~")
 
-myDailyPractice = DailyPractice()
+myDailyPractice = DailyPractice(12)
 
 print(myDailyPractice.speed)
 
 # 修改了myDailyPractice的属性值
-myDailyPractice.say()
+myDailyPractice.set(123)
 
 print(myDailyPractice.speed)
 
@@ -70,7 +72,6 @@ print(numbers)
 numbers = list(map(int, numbers))
 print(numbers)
 
-
 print("Loading", end="")
 for i in range(20):
     print(".", end='', flush=True)
@@ -102,7 +103,7 @@ python3的解决办法：字符串.encode('utf-8').decode('unicode_escape')
 python2：字符串.decode('unicode_escape')
 '''
 
-fileName = '../application.properties'
+fileName = './application.properties'
 try:
     file = open(fileName, mode='r')
     content = file.read()

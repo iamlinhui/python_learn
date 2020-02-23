@@ -40,7 +40,7 @@ a = 1 + 2 \
 print(a)
 
 # 缩进是有意义的
-print('adc\
+print('adc\n \
         def\
 ghi')
 
@@ -52,3 +52,16 @@ ghi')
 # 6.在Python中使用#来表示注释，#后的内容都属于注释，注释的内容将会被解释器所忽略
 # 我们可以通过注释来对程序进行解释说明，一定要养成良好的编写注释的习惯
 # 注释要求简单明了，一般习惯上#后边会跟着一个空格
+
+
+# input()函数会自动识别输入内容的能力，常用于输入Number（数字）类型使用
+num = input('请输入：')
+print(type(num))
+
+# 100以内奇数和
+sumResult = 0
+i = 1
+while i <= 100:
+    sumResult += i
+    i += 2
+print(sumResult)

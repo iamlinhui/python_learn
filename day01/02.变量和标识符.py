@@ -45,3 +45,11 @@ _b123 = 20
 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield'
 '''
 print(keyword.kwlist)
+
+# 试着遍历这个数组
+# print 里面end是输出
+for key in keyword.kwlist:
+    print(key, end="", sep=".")
+
+while True:
+    num = input("请输入：")
